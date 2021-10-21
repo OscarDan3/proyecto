@@ -25,7 +25,6 @@ def resultado():
     n1 = int(request.form.get("n1"))
     n2 = int(request.form.get("n2"))
     mayor = 0
-    menor=0
     mensaje = ''
     if n1 == n2:
         mayor = n1
