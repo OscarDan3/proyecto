@@ -1,0 +1,26 @@
+{% extends "layout.html" %} 
+{% block content %}
+
+<center>
+    <h1 class="nh1">Determinar el numero mayor</h1>
+<div class="fpa justify-content-center col-8">    
+    
+
+    <div class="col" style="padding: 15px;">
+        <form action="{{ url_for('resultado') }}" method="post">
+            <div class="col" style="margin: 15px; text-align: justify;">
+              
+                <input type="number" autofocus id="n1" name='n1' class="form-control" placeholder="Ingrese el primer numero" required>
+            </div>
+            <div class="col" style="margin: 15px; text-align: justify;">
+
+                <input type="number"  id="n2" name='n2' class="form-control" placeholder="Ingrese segundo numero" required>
+            </div>  
+
+            <button type="submit" class="btn-primary btnmayor">Mayor</button>
+            <br>
+            {{text}} {{mayor}} 
+         </form>
+   
+<br>
+{% endblock %} 

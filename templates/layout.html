@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        
+    
+
+<body style="background-color: rgb(198, 194, 212);">  
+
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" href="/">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="mayor">Mayor</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/sanmiguel">San Miguel</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/enlace">Enlaces UGB</a>
+      </li>
+  </ul>
+
+    <div class="container fp">
+          {% block content %}
+
+          {% endblock %}
+
+    </div>
+
+ 
+</body> 
+</html> 

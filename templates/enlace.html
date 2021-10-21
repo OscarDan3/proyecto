@@ -1,0 +1,18 @@
+{% extends "layout.html" %} 
+
+{% block content %}
+
+<h1 class="nh1" style="text-align: center;">Enlaces UGB</h1>
+    <div class="fpa justify-content-center">    
+        <ul style="font-weight: bold;">
+           
+            {% for n in dic %}
+            <li>
+                <a href="{{n.url}}" target="_blank" style="text-decoration: none">{{n.texto}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+{% endblock %} 
